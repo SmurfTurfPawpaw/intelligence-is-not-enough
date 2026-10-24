@@ -1,0 +1,65 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"urn:giovanni:project-record:2.0.0",
+  "title":"Project record structural schema",
+  "description":"A declared record, not real-world authority or production attestation. Semantic and manual checks remain separate.",
+  "$comment":"Date-time format is an annotation unless the chosen schema runtime supports and enables that assertion. The companion Python validator independently checks timestamp semantics, unique identities, cross-record references and other relationships. The example selects one primary profile; combined obligations remain a project launch decision.",
+  "type":"object",
+  "required":["schema_version","project","components","links","decisions","change"],
+  "properties":{
+    "schema_version":{"const":"2.0.0"},
+    "project":{
+      "type":"object","required":["id","version","purpose","owner","scope","beneficiaries","profile"],
+      "properties":{
+        "id":{"$ref":"#/$defs/text"},"version":{"$ref":"#/$defs/text"},
+        "purpose":{"$ref":"#/$defs/text"},"owner":{"$ref":"#/$defs/text"},"scope":{"$ref":"#/$defs/text"},
+        "beneficiaries":{"type":"array","minItems":1,"items":{"$ref":"#/$defs/text"}},
+        "profile":{"enum":["private-tool","shared-service","research","authorized-investigation"]}
+      }
+    },
+    "components":{"type":"array","minItems":1,"items":{"$ref":"#/$defs/component"}},
+    "links":{"type":"array","items":{"type":"object","required":["from","to","reason"],"properties":{"from":{"$ref":"#/$defs/text"},"to":{"$ref":"#/$defs/text"},"reason":{"$ref":"#/$defs/text"}}}},
+    "decisions":{"type":"array","minItems":1,"items":{"type":"object","required":["id","reason","status","revisit_when"],"properties":{"id":{"$ref":"#/$defs/text"},"reason":{"$ref":"#/$defs/text"},"status":{"$ref":"#/$defs/text"},"revisit_when":{"$ref":"#/$defs/text"}}}},
+    "change":{"type":"object","required":["outcome","affected_components","verification"],"properties":{"outcome":{"$ref":"#/$defs/text"},"affected_components":{"type":"array","minItems":1,"items":{"$ref":"#/$defs/text"}},"verification":{"type":"array","minItems":1,"items":{"$ref":"#/$defs/text"}}}},
+    "observations":{"type":"array","items":{"type":"object","required":["id","component","collector","subject_revision","observed_at","max_age_seconds","result"],"properties":{"id":{"$ref":"#/$defs/text"},"component":{"$ref":"#/$defs/text"},"collector":{"$ref":"#/$defs/text"},"subject_revision":{"$ref":"#/$defs/text"},"observed_at":{"type":"string","format":"date-time"},"max_age_seconds":{"type":"number","minimum":0},"result":{"enum":["pass","fail","unknown"]}}}},
+    "synchronization":{"type":"object","properties":{"enabled":{"type":"boolean"}}},
+    "policy":{
+      "type":"object","required":["status"],
+      "description":"A declared project adoption choice; does not grant permission or establish actual activation. Any independently required review still follows real project policy.",
+      "$comment":"For active policies, Python additionally checks that owner-adoption names project.owner as approved_by, or that independent-review names distinct proposer and approver. JSON Schema does not authenticate actors or references.",
+      "properties":{
+        "status":{"$ref":"#/$defs/text"},
+        "approval_mode":{"enum":["owner-adoption","independent-review"]},
+        "proposed_by":{"$ref":"#/$defs/text"},"approved_by":{"$ref":"#/$defs/text"},
+        "approval_reference":{"$ref":"#/$defs/text"},"authority_reference":{"$ref":"#/$defs/text"},
+        "adoption_reason":{"$ref":"#/$defs/text"},"review_condition":{"$ref":"#/$defs/text"}
+      },
+      "allOf":[{
+        "if":{"properties":{"status":{"const":"active"}},"required":["status"]},
+        "then":{"required":["approval_mode","proposed_by","approved_by","approval_reference","authority_reference","adoption_reason","review_condition"]}
+      }]
+    },
+    "human_review":{
+      "type":"object",
+      "description":"Four recognized optional declaration entries. Omitted or invalid entries remain UNKNOWN in the Python report; a complete supplied entry is declared, not authenticated.",
+      "properties":{
+        "research_scope":{"$ref":"#/$defs/humanReviewEntry"},
+        "customer_outcome":{"$ref":"#/$defs/humanReviewEntry"},
+        "permissions":{"$ref":"#/$defs/humanReviewEntry"},
+        "recovery_applicability":{"$ref":"#/$defs/humanReviewEntry"}
+      }
+    }
+  },
+  "$defs":{
+    "text":{"type":"string","minLength":1,"pattern":"\\S"},
+    "humanReviewEntry":{
+      "type":"object","required":["status","by","reason","reference"],
+      "properties":{
+        "status":{"enum":["reviewed","not-applicable"]},
+        "by":{"$ref":"#/$defs/text"},"reason":{"$ref":"#/$defs/text"},"reference":{"$ref":"#/$defs/text"}
+      }
+    },
+    "maintenance":{"type":"object","required":["kind","low","high","unit","basis","review_trigger"],"properties":{"kind":{"enum":["estimate","measurement"]},"low":{"type":"number","minimum":0},"high":{"type":"number","minimum":0},"unit":{"$ref":"#/$defs/text"},"basis":{"$ref":"#/$defs/text"},"review_trigger":{"$ref":"#/$defs/text"},"denominator":{"$ref":"#/$defs/text"}},"allOf":[{"if":{"properties":{"unit":{"const":"weekly_ai_allocation_percent"}},"required":["unit"]},"then":{"required":["denominator"],"properties":{"high":{"maximum":100}}}}]},
+    "component":{"type":"object","required":["id","purpose","owner","canonical_record","revision","reconsider_when","maintenance"],"properties":{"id":{"$ref":"#/$defs/text"},"purpose":{"$ref":"#/$defs/text"},"owner":{"$ref":"#/$defs/text"},"canonical_record":{"$ref":"#/$defs/text"},"revision":{"$ref":"#/$defs/text"},"reconsider_when":{"$ref":"#/$defs/text"},"maintenance":{"$ref":"#/$defs/maintenance"},"needs_current_observation":{"type":"boolean"}}}
+  }
+}

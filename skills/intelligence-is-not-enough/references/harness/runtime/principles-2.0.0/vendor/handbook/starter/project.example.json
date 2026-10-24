@@ -1,0 +1,62 @@
+{
+  "schema_version": "2.0.0",
+  "project": {
+    "id": "example-research-tool",
+    "version": "0.1.0",
+    "purpose": "Help a researcher organize sourced observations and distinguish them from interpretations.",
+    "owner": "example project owner",
+    "scope": "Local fictional demonstration records; no external collection, publication or accounts.",
+    "beneficiaries": ["the researcher", "an invited reviewer"],
+    "profile": "research"
+  },
+  "components": [
+    {
+      "id": "notes",
+      "purpose": "Retain original observations with source attribution.",
+      "owner": "example researcher",
+      "canonical_record": "local source records",
+      "revision": "example-r3",
+      "needs_current_observation": true,
+      "reconsider_when": "The format prevents a reviewer from following an observation to its source.",
+      "maintenance": {
+        "kind": "estimate", "low": 0.5, "high": 2,
+        "unit": "weekly_ai_allocation_percent",
+        "denominator": "Hypothetical planned project AI allowance for one week; not observed account usage.",
+        "basis": "Illustrative allocation for one bounded review after material changes.",
+        "review_trigger": "Observed maintenance repeatedly exceeds the planned range."
+      }
+    },
+    {
+      "id": "reader",
+      "purpose": "Show a useful overview with access to the original supporting detail.",
+      "owner": "example interface maintainer",
+      "canonical_record": "projection of notes, never independently edited factual data",
+      "revision": "example-ui2",
+      "needs_current_observation": false,
+      "reconsider_when": "A user cannot distinguish a source observation from an interpretation.",
+      "maintenance": {
+        "kind": "estimate", "low": 0, "high": 1,
+        "unit": "weekly_ai_allocation_percent",
+        "denominator": "Hypothetical planned project AI allowance for one week; not observed account usage.",
+        "basis": "Illustrative budget for changed-interface review only.",
+        "review_trigger": "New evidence formats introduce repeated display failures."
+      }
+    }
+  ],
+  "links": [{"from":"reader","to":"notes","reason":"The visible summary derives from the authoritative observation records."}],
+  "decisions": [{"id":"D1","reason":"A local modular tool serves the current fictional scope.","status":"adopted-for-demo","revisit_when":"Shared use requires persistent authenticated collaboration."}],
+  "change": {
+    "outcome":"Make the factual source reachable from each summary.",
+    "risk":"reversible-internal",
+    "affected_components":["notes","reader"],
+    "verification":["Follow one source link; verify interpretation is labeled; reopen the saved record."]
+  },
+  "observations": [{
+    "id":"OBS-demo-1","component":"notes","collector":"fictional fixture author",
+    "subject_revision":"example-r3","observed_at":"2026-10-23T10:00:00Z",
+    "max_age_seconds":3600,"result":"pass"
+  }],
+  "synchronization": {"enabled":false},
+  "policy": {"status":"proposed","proposed_by":"example author"},
+  "human_review": {}
+}

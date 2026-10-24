@@ -1,0 +1,4 @@
+interface:
+  display_name: "Intelligence Is Not Enough"
+  short_description: "Apply principles with evidence and lean orchestration"
+  default_prompt: "Use $intelligence-is-not-enough to adopt the harness in this project and complete the current task with proportionate checks."

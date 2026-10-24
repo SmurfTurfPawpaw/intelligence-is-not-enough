@@ -52,8 +52,19 @@
     "methods"
   ],
   "subtitle": "A Harness for Autonomous Discovery",
-  "release_version": "2.1.0",
+  "release_version": "2.2.0",
   "edition": "Red-team harness",
   "ai_native_title": "Beyond Human Patience",
-  "repository": "https://github.com/SmurfTurfPawpaw/intelligence-is-not-enough"
+  "repository": "https://github.com/SmurfTurfPawpaw/intelligence-is-not-enough",
+  "codex_skill": {
+    "path": "skills/intelligence-is-not-enough",
+    "guide": "CODEX-SKILL.md",
+    "entry": "SKILL.md",
+    "modes": [
+      "base",
+      "research"
+    ],
+    "offline": true,
+    "runtime_version": "2.0.0"
+  }
 }

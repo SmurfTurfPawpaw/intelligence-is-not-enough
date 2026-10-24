@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0.0",
+  "task_id": "DEMO-LOCAL-001",
+  "state": "ready",
+  "outcome": "Observe first/repeated/distinct identifier behavior in the contained synthetic ledger, retaining source/output/control and honest limits",
+  "beneficiary": "A researcher learning the local investigation workflow",
+  "scope": "Contained owned synthetic example only; no network, real payments, customer data or live finding",
+  "authority_reference": "The reader's actual authority to use their own extracted scratch copy; no third-party authority supplied",
+  "recovery": "Preserve local evidence and partial task records; restore only disposable scratch changes; do not overwrite an old capture",
+  "subjects": [
+    {
+      "path": ".principles/tasks/DEMO-LOCAL-001/begin.json",
+      "kind": "file"
+    },
+    {
+      "path": ".principles/tasks/DEMO-LOCAL-001/review.json",
+      "kind": "file"
+    },
+    {
+      "path": "examples/investigation-brief.md",
+      "kind": "file"
+    },
+    {
+      "path": "examples/ledger.py",
+      "kind": "file"
+    },
+    {
+      "path": "examples/capture.py",
+      "kind": "file"
+    },
+    {
+      "path": "examples/accept.py",
+      "kind": "file"
+    },
+    {
+      "path": "example-private/notes.md",
+      "kind": "file"
+    },
+    {
+      "path": "example-private/organisation.json",
+      "kind": "file"
+    },
+    {
+      "path": "tools/orchestration.py",
+      "kind": "file"
+    }
+  ],
+  "checks": [
+    {
+      "id": "C-ORG",
+      "criterion": "Actual current eight-team organization record passes structural consistency; no worker liveness, identity or permission claim",
+      "max_age_seconds": null
+    },
+    {
+      "id": "C-LEDGER",
+      "criterion": "Actual source-bound synthetic first/repeated/distinct behavior, meaningful control, attributed interpretation and local limits are complete; a negative duplicate-acceptance result is legitimate",
+      "max_age_seconds": null
+    }
+  ]
+}

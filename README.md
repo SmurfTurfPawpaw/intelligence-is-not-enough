@@ -8,7 +8,7 @@ Intelligence Is Not Enough is a model-agnostic workflow harness for autonomous, 
 
 Use it with a hosted or open-weight model and an agent host that can read project files and run tools. The package requires no model subscription or API key to try its local examples. It supplies no model content filter or provider-specific refusal policy.
 
-**Release 2.1.0 · Python 3.12+ · standard library · MIT**
+**Release 2.2.0 · Python 3.12+ · standard library · MIT**
 
 ## Try it locally
 
@@ -42,6 +42,8 @@ For the complete begin → task → experiment → review → evidence receipt �
 
 ## Use it with an agent
 
+**Codex:** ask its skill installer to install `skills/intelligence-is-not-enough` from this repository at tag `v2.2.0`. In a new turn, use `$intelligence-is-not-enough` followed by your task. The self-contained skill offers a base project mode and the complete exploratory research mode, reuses existing records and connects the required acceptance gate. See the [installation and maintenance guide](https://github.com/SmurfTurfPawpaw/intelligence-is-not-enough/blob/v2.2.0/CODEX-SKILL.md). Installation adds no service or recurring calls.
+
 Start in a directory you control. Have your agent read [AGENTS.md](AGENTS.md), [the principles](base/PRINCIPLES-2.0.1.md) and [orchestration](ORCHESTRATION.md), then give it a useful objective and the actual project boundary. For example:
 
 > Follow this project's AGENTS.md and linked principles. Investigate the supplied local synthetic fixture. Establish the required team ownership, define useful acceptance, preserve observations and controls, and use the required workflow before declaring completion. Keep evolving hypotheses separate from the frozen brief. Do not infer permission for a different asset or effect.
@@ -50,7 +52,7 @@ The host must actually load the instructions, expose the selected tools and pres
 
 ### In an existing project
 
-1. Retain the complete package under a versioned path, such as `docs/red-team/releases/2.1.0/`.
+1. Retain the complete package under a versioned path, such as `docs/red-team/releases/2.2.0/`.
 2. Merge the managed instructions into the project's root `AGENTS.md`, preserving its existing rules. Update copied relative links to their retained locations.
 3. Map current owners and records into the required organization. Reuse existing work logs and evidence storage instead of creating a competing source of truth.
 4. Connect the organization check and required workflow gate to the project's **real acceptance command**, preserving nonzero exits. Use the actual task/root and retained runtime paths.
@@ -98,9 +100,9 @@ This repository is a reusable workflow and local checker—not an autonomous wor
 
 ## Versions and integrity
 
-The public distribution is **2.1.0**. Its operating profile remains **2.0.0**, principles **2.0.1**, workflow **2.0.0**, and core/task schema **1.0.0**. [PROFILE.json](PROFILE.json) records the separate component identities. This public release adds documentation and licensing; executable source is unchanged from the reviewed 2.0.1 distribution.
+The public distribution is **2.2.0**. Its operating profile remains **2.0.0**, principles **2.0.1**, workflow **2.0.0**, and core/task schema **1.0.0**. [PROFILE.json](PROFILE.json) records the separate identities. This release adds a Codex skill, generated offline resources, acceptance adapters and focused tests. The principles/runtime and research checker remain unchanged.
 
-[release-manifest.json](release-manifest.json) lists public payload hashes. A checksum detects changes relative to that manifest; it is not a distributor signature or authenticated execution record. The manifest excludes itself from its file list to avoid a circular self-hash.
+[release-manifest.json](https://github.com/SmurfTurfPawpaw/intelligence-is-not-enough/blob/v2.2.0/release-manifest.json) lists public payload hashes. A checksum detects changes relative to that manifest; it is not a distributor signature or authenticated execution record. The manifest excludes itself from its file list to avoid a circular self-hash. The skill has its own offline manifest.
 
 ## Contribute
 

@@ -1,6 +1,6 @@
 {
   "name": "Intelligence Is Not Enough",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "hash_algorithm": "SHA256",
   "files": [
     {
@@ -15,8 +15,8 @@
     },
     {
       "path": "ADOPTION.md",
-      "bytes": 12901,
-      "sha256": "3340cf5c8bf3fdac9044c87edbb32a4d8e4088e0580134fe0379e81113db6544"
+      "bytes": 13117,
+      "sha256": "8b5a1fbe35e283e0fbf27e7f51d74e5f8fedae702f6023d1477d052af464c3d5"
     },
     {
       "path": "AGENTS.md",
@@ -34,9 +34,14 @@
       "sha256": "d425540a2c75f08760120a047101c2be01638e1cccf47ab94d5bba7e2304da85"
     },
     {
+      "path": "CODEX-SKILL.md",
+      "bytes": 4497,
+      "sha256": "a55bc7e62e8b184dc2d2506a57f735bbbdb9b3a28580542d0de5efdeb886d5f6"
+    },
+    {
       "path": "CONTRIBUTING.md",
-      "bytes": 1952,
-      "sha256": "54863212f040753cb28b37eb913ea7c0ff1b999358a3c08515fc4819bc9ce1d7"
+      "bytes": 2570,
+      "sha256": "dde2e4a8f4489790b857190b81c230cd043344b94cf60c101851866fcf859a31"
     },
     {
       "path": "COVERAGE.md",
@@ -65,13 +70,13 @@
     },
     {
       "path": "PROFILE.json",
-      "bytes": 2501,
-      "sha256": "b22f7bbb28dc94dcc1a01f6887353337d964d40e1973207cc3e56351c32cc27c"
+      "bytes": 2746,
+      "sha256": "fd7ada87b4ae5f728864351bd06ba405033c4a946d9a0962433eadc308b7dd35"
     },
     {
       "path": "README.md",
-      "bytes": 9029,
-      "sha256": "c51020004b13e9783d882bfe13f5ccb461279b0463045aa2a5db096c20ab27b0"
+      "bytes": 9714,
+      "sha256": "7711a66c0129b306d1fc7e3f7e3d99341e4b495f1ec65168ee08d063b9828749"
     },
     {
       "path": "TOOLS.md",
@@ -209,6 +214,261 @@
       "sha256": "75f8b147cf426bc6fbbf9fffe9a448517120649b65f65d22060cadf1bf28e0d4"
     },
     {
+      "path": "skills/intelligence-is-not-enough/SKILL.md",
+      "bytes": 6081,
+      "sha256": "5365e01e4711fb9d58fd31c9d82037b7c793f936a3c567784209a946aaafc8d6"
+    },
+    {
+      "path": "skills/intelligence-is-not-enough/agents/openai.yaml",
+      "bytes": 283,
+      "sha256": "38699bc7a013bc22d93984193d8991ce2c660490ff8df724ddae0bcb15eb8f0d"
+    },
+    {
+      "path": "skills/intelligence-is-not-enough/bundle-manifest.json",
+      "bytes": 9022,
+      "sha256": "f8e3c49fcba9bb336501444d0563fe3ab8f5731727a85cfe5e35368b2655068c"
+    },
+    {
+      "path": "skills/intelligence-is-not-enough/references/base-workflow.md",
+      "bytes": 3072,
+      "sha256": "61eaf0e49b84c34b5b46fab68b65a6ebd32922a7f63d54f47636bf52d86f1aa1"
+    },
+    {
+      "path": "skills/intelligence-is-not-enough/references/harness/ADOPTION.md",
+      "bytes": 13117,
+      "sha256": "8b5a1fbe35e283e0fbf27e7f51d74e5f8fedae702f6023d1477d052af464c3d5"
+    },
+    {
+      "path": "skills/intelligence-is-not-enough/references/harness/AGENTS.md",
+      "bytes": 15538,
+      "sha256": "c6e902d8a1426e01ee0ba7c52f045f2774979676079263e158eca082e708c833"
+    },
+    {
+      "path": "skills/intelligence-is-not-enough/references/harness/AI-NATIVE.md",
+      "bytes": 23085,
+      "sha256": "e9c07c83384014b61e21cf90f789427ca13c3407695d0b5860e29c5e19529616"
+    },
+    {
+      "path": "skills/intelligence-is-not-enough/references/harness/ARCHITECTURE.md",
+      "bytes": 4716,
+      "sha256": "d425540a2c75f08760120a047101c2be01638e1cccf47ab94d5bba7e2304da85"
+    },
+    {
+      "path": "skills/intelligence-is-not-enough/references/harness/CONTRIBUTING.md",
+      "bytes": 2570,
+      "sha256": "dde2e4a8f4489790b857190b81c230cd043344b94cf60c101851866fcf859a31"
+    },
+    {
+      "path": "skills/intelligence-is-not-enough/references/harness/COVERAGE.md",
+      "bytes": 5830,
+      "sha256": "c2040c541943b32130703410ffef1342aaf81ff7a6a77a9e0dd2a000ff652ded"
+    },
+    {
+      "path": "skills/intelligence-is-not-enough/references/harness/HOST-TOOLS.md",
+      "bytes": 5299,
+      "sha256": "23cd9cf7280c49676b7554c06688a85447299231fbb53aca2ebc46e23983df11"
+    },
+    {
+      "path": "skills/intelligence-is-not-enough/references/harness/LICENSE",
+      "bytes": 1096,
+      "sha256": "921937618449805783316491cf9558a340f931a7cb76e98e9d22b0ab25a763bd"
+    },
+    {
+      "path": "skills/intelligence-is-not-enough/references/harness/MODEL-PORTABILITY.md",
+      "bytes": 7238,
+      "sha256": "c6f6ea4fad8b50974fd48f10c378436fcc99aefc24e2061100c9fb1aad5dfea4"
+    },
+    {
+      "path": "skills/intelligence-is-not-enough/references/harness/ORCHESTRATION.md",
+      "bytes": 28896,
+      "sha256": "e8a9cc5961b91e8ec0a2a54a5d323d9a9c75f4b894d81909cef9c4ba5ad55298"
+    },
+    {
+      "path": "skills/intelligence-is-not-enough/references/harness/PROFILE.json",
+      "bytes": 2746,
+      "sha256": "fd7ada87b4ae5f728864351bd06ba405033c4a946d9a0962433eadc308b7dd35"
+    },
+    {
+      "path": "skills/intelligence-is-not-enough/references/harness/README.md",
+      "bytes": 9714,
+      "sha256": "7711a66c0129b306d1fc7e3f7e3d99341e4b495f1ec65168ee08d063b9828749"
+    },
+    {
+      "path": "skills/intelligence-is-not-enough/references/harness/TOOLS.md",
+      "bytes": 13579,
+      "sha256": "a849ec2cc321a6c7a5d42cced25a74c74fbeb8b97e7fd0f754055f70186c71eb"
+    },
+    {
+      "path": "skills/intelligence-is-not-enough/references/harness/VERIFICATION.md",
+      "bytes": 7606,
+      "sha256": "0a5cb5bed46fe265559ff6fd7334cfba1a85cf12d56d5636fe6b24b6c27f76ca"
+    },
+    {
+      "path": "skills/intelligence-is-not-enough/references/harness/WORKFLOW.md",
+      "bytes": 14771,
+      "sha256": "f2bb3d312b68c339e18e409ecf8d1b1808c0c6b525b1c74869fc375804660b36"
+    },
+    {
+      "path": "skills/intelligence-is-not-enough/references/harness/base/PRINCIPLES-2.0.1.md",
+      "bytes": 14464,
+      "sha256": "6c532d8e4564543c58709781fe1c02d1550e2b71a1337b4d7376da868b245dc7"
+    },
+    {
+      "path": "skills/intelligence-is-not-enough/references/harness/examples/README.md",
+      "bytes": 4541,
+      "sha256": "59a86b176436d66249f4a9cd64a5cf33c4185a96c01d6c460ae021f3cdd9106b"
+    },
+    {
+      "path": "skills/intelligence-is-not-enough/references/harness/examples/WALKTHROUGH.md",
+      "bytes": 9427,
+      "sha256": "9d46b08b3852a4f7a1af168090ef5aa565d703b12a0f651a0648bcc3e33a8774"
+    },
+    {
+      "path": "skills/intelligence-is-not-enough/references/harness/examples/accept.py",
+      "bytes": 1814,
+      "sha256": "9651696191cad44727f6592f3f848eacbda89c69144a899212bccc2f0aba44d9"
+    },
+    {
+      "path": "skills/intelligence-is-not-enough/references/harness/examples/capture.py",
+      "bytes": 3324,
+      "sha256": "275eb98a30791f62a192a40695647f26a4995da8e67badb4539b7490cf37ded4"
+    },
+    {
+      "path": "skills/intelligence-is-not-enough/references/harness/examples/demo-review.json",
+      "bytes": 3700,
+      "sha256": "870b28ecfbccd617242304906c4968b86c6fd95ea096b21394f0d9aad9148b55"
+    },
+    {
+      "path": "skills/intelligence-is-not-enough/references/harness/examples/demo-task.json",
+      "bytes": 2008,
+      "sha256": "92cd8bc68424eaf05f1e19e595c7732f8621b282e0db97b8c720cede25512045"
+    },
+    {
+      "path": "skills/intelligence-is-not-enough/references/harness/examples/explore.py",
+      "bytes": 5273,
+      "sha256": "a14efdf62db888718337624eaecd52225e8ad4caca8d55224ccf0c0b392a538b"
+    },
+    {
+      "path": "skills/intelligence-is-not-enough/references/harness/examples/investigation-brief.md",
+      "bytes": 1884,
+      "sha256": "4d1ef5da7cad721cd6d1bc69b45110baf8c369abbd3f89d9e2417f6749ea04f8"
+    },
+    {
+      "path": "skills/intelligence-is-not-enough/references/harness/examples/ledger.py",
+      "bytes": 593,
+      "sha256": "2bbec7679b7d309307e097fb5dcabdd28b2882e192e08535128cb00bfb07128a"
+    },
+    {
+      "path": "skills/intelligence-is-not-enough/references/harness/examples/notes.md",
+      "bytes": 1080,
+      "sha256": "89d31b8ea035ca0ebe7667ba0efa47a6137b93bd733e4d5e42b979ded10a0dd5"
+    },
+    {
+      "path": "skills/intelligence-is-not-enough/references/harness/examples/organisation-compact.json",
+      "bytes": 4204,
+      "sha256": "f1b529b303f64455bdf2a2b7a82601c1fac4c7c1527be19728be6da4ff6df646"
+    },
+    {
+      "path": "skills/intelligence-is-not-enough/references/harness/examples/organisation-parallel.json",
+      "bytes": 7136,
+      "sha256": "1bb1f28306a43ced9206c9785866a042b3d687009aee88e89301890d2538f7a2"
+    },
+    {
+      "path": "skills/intelligence-is-not-enough/references/harness/examples/test_examples.py",
+      "bytes": 4387,
+      "sha256": "0947db3e4cac03317c46f97eab12f094fe8bb7e9b0f737643e37a728c3052353"
+    },
+    {
+      "path": "skills/intelligence-is-not-enough/references/harness/examples/test_orchestration.py",
+      "bytes": 7094,
+      "sha256": "1383d990e598143af3321e0242b64e88d6f72a54a30b503012beeb7c0a0f62f3"
+    },
+    {
+      "path": "skills/intelligence-is-not-enough/references/harness/runtime/principles-2.0.0/README.md",
+      "bytes": 3575,
+      "sha256": "b342bccd7e6a2fff52534159c691f94f3782cda7e88695c86df4e9fc9ba70552"
+    },
+    {
+      "path": "skills/intelligence-is-not-enough/references/harness/runtime/principles-2.0.0/principles.py",
+      "bytes": 18285,
+      "sha256": "350a874d332c1fcb5f3348c804d216e84bd1f1370fcf2ecd242772d562985779"
+    },
+    {
+      "path": "skills/intelligence-is-not-enough/references/harness/runtime/principles-2.0.0/tests/test_principles.py",
+      "bytes": 12918,
+      "sha256": "b339d7df16558dab48058e3dddccdf17fd6ef09ca5a4b8ffeeb9da92d2bdb500"
+    },
+    {
+      "path": "skills/intelligence-is-not-enough/references/harness/runtime/principles-2.0.0/tests/test_workflow.py",
+      "bytes": 9045,
+      "sha256": "95e22c5bae9121f27458c73536fee5c802b2764a214bad65861a07f56682afef"
+    },
+    {
+      "path": "skills/intelligence-is-not-enough/references/harness/runtime/principles-2.0.0/vendor/handbook/harness/validate.py",
+      "bytes": 12819,
+      "sha256": "8cd656a5685f59713782c9fabb837d65aa8940a16f9e7c19810ebe12497d6ac8"
+    },
+    {
+      "path": "skills/intelligence-is-not-enough/references/harness/runtime/principles-2.0.0/vendor/handbook/spec/project.schema.json",
+      "bytes": 5827,
+      "sha256": "bf1c683f688fd16cc1e0100f0abec48f7a293f6f22784e21352471d128692915"
+    },
+    {
+      "path": "skills/intelligence-is-not-enough/references/harness/runtime/principles-2.0.0/vendor/handbook/starter/project.example.json",
+      "bytes": 3059,
+      "sha256": "061ed9a452d85007a5a0b7df0f8fe73b9416304e8be4926c06e1556a4e012287"
+    },
+    {
+      "path": "skills/intelligence-is-not-enough/references/harness/runtime/principles-2.0.0/vendor/handbook/tests/test_harness.py",
+      "bytes": 10983,
+      "sha256": "e958468acc9d7314369007a9b84bb2fd74c1a3b4b6bf4cb7a81e6744d81d1c96"
+    },
+    {
+      "path": "skills/intelligence-is-not-enough/references/harness/runtime/principles-2.0.0/workflow.py",
+      "bytes": 9440,
+      "sha256": "75f8b147cf426bc6fbbf9fffe9a448517120649b65f65d22060cadf1bf28e0d4"
+    },
+    {
+      "path": "skills/intelligence-is-not-enough/references/harness/templates/ENGAGEMENT.md",
+      "bytes": 1816,
+      "sha256": "4b0f6cbf669383bab8055c3d68436fa18cb2a4c0126c7698f39a4a299bdfb61a"
+    },
+    {
+      "path": "skills/intelligence-is-not-enough/references/harness/templates/FINDING.md",
+      "bytes": 1600,
+      "sha256": "5b67d6466c8a3c20e6060342be004ca63ada379b55b82a284045042235934a1d"
+    },
+    {
+      "path": "skills/intelligence-is-not-enough/references/harness/templates/INVESTIGATION.md",
+      "bytes": 3394,
+      "sha256": "884ac04951b3ea12c0fe48a89f659a0b2fb1a275154c3c03b49a132a086a352e"
+    },
+    {
+      "path": "skills/intelligence-is-not-enough/references/harness/templates/NOTES.md",
+      "bytes": 2812,
+      "sha256": "647d1090b383125b751d6bb976b5e60127420b97aa736e58d69d79cc1d039c6a"
+    },
+    {
+      "path": "skills/intelligence-is-not-enough/references/harness/templates/WORK-PACKET.md",
+      "bytes": 2073,
+      "sha256": "be158acd3861095db143b5dd3723bd1bc39b7a63eca19b504a4f4bcdd46d96d1"
+    },
+    {
+      "path": "skills/intelligence-is-not-enough/references/harness/tools/orchestration.py",
+      "bytes": 12699,
+      "sha256": "354672ed2735e3a7f3b7042805aa2af63afd2c3269e3e3eb8c3b0f68f6f7836c"
+    },
+    {
+      "path": "skills/intelligence-is-not-enough/scripts/accept.py",
+      "bytes": 1842,
+      "sha256": "5e3c846741694a5221cfbafd18d05f1977cb0775ba9bab729f4ed0b7b4ebf1f4"
+    },
+    {
+      "path": "skills/intelligence-is-not-enough/scripts/verify_bundle.py",
+      "bytes": 2097,
+      "sha256": "4f37e03868edb188e5f28861a389e722545494affe876518b9860d584a6f29d5"
+    },
+    {
       "path": "templates/ENGAGEMENT.md",
       "bytes": 1816,
       "sha256": "4b0f6cbf669383bab8055c3d68436fa18cb2a4c0126c7698f39a4a299bdfb61a"
@@ -234,11 +494,29 @@
       "sha256": "be158acd3861095db143b5dd3723bd1bc39b7a63eca19b504a4f4bcdd46d96d1"
     },
     {
+      "path": "tests/test_skill.py",
+      "bytes": 11805,
+      "sha256": "a31185ce4460a16902e3ff39312568abb98fd3f81ee9e608de839e9f17f4a03a"
+    },
+    {
+      "path": "tools/accept.py",
+      "bytes": 1177,
+      "sha256": "6c2169d01ac2fb2f28147ac91a262fd89d8dc3bd1b5a5eebcd4b0e697da39a94"
+    },
+    {
       "path": "tools/orchestration.py",
       "bytes": 12699,
       "sha256": "354672ed2735e3a7f3b7042805aa2af63afd2c3269e3e3eb8c3b0f68f6f7836c"
+    },
+    {
+      "path": "tools/package_skill.py",
+      "bytes": 4536,
+      "sha256": "e5ca00b6eeebe283980230966388ec501ab9918d2b73a0f6f538d036d4409480"
+    },
+    {
+      "path": "tools/skill-sources.json",
+      "bytes": 1456,
+      "sha256": "ed96aa05450bd431608ab5636be1a30174b4b585fbebf5b0b3ce6c3ccdbdd009"
     }
-  ],
-  "self_hash": "Manifest excluded from its own entries; compare archive/commit identity separately",
-  "meaning": "Public file integrity reference; not a signature, execution attestation or permission grant"
+  ]
 }

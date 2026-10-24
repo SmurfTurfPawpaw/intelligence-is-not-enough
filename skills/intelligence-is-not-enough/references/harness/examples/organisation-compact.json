@@ -1,0 +1,124 @@
+{
+  "schema_version": "1.0.0",
+  "profile_version": "2.0.0",
+  "project": "synthetic-compact",
+  "revision": 1,
+  "integrator": "owner",
+  "state_writer": "owner",
+  "max_concurrent_workers": 1,
+  "references": {
+    "brief": "examples/investigation-brief.md",
+    "authority": "owned synthetic scratch copy only",
+    "evidence": "example-private/ledger-run.json",
+    "events": "example-private/notes.md"
+  },
+  "actors": [
+    {
+      "id": "owner",
+      "identity_reference": "synthetic owner/investigator; replace with actual contributor"
+    }
+  ],
+  "teams": [
+    {
+      "id": "coordination",
+      "owner": "owner",
+      "state": "ready",
+      "reason": "Synthetic tutorial responsibility; no running worker implied"
+    },
+    {
+      "id": "systems",
+      "owner": "owner",
+      "state": "dormant",
+      "reason": "Synthetic tutorial responsibility; no running worker implied"
+    },
+    {
+      "id": "discovery",
+      "owner": "owner",
+      "state": "dormant",
+      "reason": "Synthetic tutorial responsibility; no running worker implied"
+    },
+    {
+      "id": "engineering",
+      "owner": "owner",
+      "state": "dormant",
+      "reason": "Synthetic tutorial responsibility; no running worker implied"
+    },
+    {
+      "id": "validation",
+      "owner": "owner",
+      "state": "ready",
+      "reason": "Synthetic tutorial responsibility; no running worker implied"
+    },
+    {
+      "id": "knowledge",
+      "owner": "owner",
+      "state": "ready",
+      "reason": "Synthetic tutorial responsibility; no running worker implied"
+    },
+    {
+      "id": "operations",
+      "owner": "owner",
+      "state": "dormant",
+      "reason": "Synthetic tutorial responsibility; no running worker implied"
+    },
+    {
+      "id": "methods",
+      "owner": "owner",
+      "state": "dormant",
+      "reason": "Synthetic tutorial responsibility; no running worker implied"
+    }
+  ],
+  "work": [
+    {
+      "id": "LEDGER",
+      "packet_revision": 1,
+      "team": "engineering",
+      "requester": "owner",
+      "assignee": "owner",
+      "integrator": "owner",
+      "contributors": [
+        "owner"
+      ],
+      "stage": "integrated",
+      "objective": "Illustrate exact first/repeat/distinct synthetic ledger behavior",
+      "inputs": [
+        {
+          "reference": "examples/ledger.py",
+          "revision": "illustrative fixture identity; replace with observed hash"
+        }
+      ],
+      "authority_reference": "Owned disposable synthetic copy; no target or real payment",
+      "permitted_effects": "In-memory synthetic run and local private capture only",
+      "owned_outputs": [
+        "example-private/ledger-run.json",
+        "example-private/notes.md"
+      ],
+      "output_claim": "released",
+      "dependencies": [],
+      "acceptance": "Actual fixture/source/control inspected; real workflow receipt remains separately required",
+      "budget": "One synthetic tutorial session; no model calls from scripts; actual host usage UNKNOWN",
+      "stop_recovery": "Preserve failed capture; no overwrite or automatic retry; no external effects",
+      "next_action": "Replace illustrative declarations with actual attributed work; no live conclusion",
+      "independence_required": false,
+      "handoff": {
+        "packet_revision": 1,
+        "submission_revision": "illustrative-ledger-v1",
+        "artifacts": [
+          {
+            "reference": "example-private/ledger-run.json",
+            "revision": "illustrative-capture-v1"
+          }
+        ],
+        "observations": "ILLUSTRATIVE first accepted/repeat refused/distinct accepted, not an actual execution record",
+        "limitations": "No live/concurrency/alternate-identity evidence; shared-author self-review",
+        "effects_recovery": "Illustrative in-memory only; no actual effect asserted"
+      },
+      "review": {
+        "actor": "owner",
+        "submission_revision": "illustrative-ledger-v1",
+        "verdict": "pass",
+        "evidence_reference": "ILLUSTRATIVE disclosed self-review; replace with actual review/notes"
+      }
+    }
+  ]
+}

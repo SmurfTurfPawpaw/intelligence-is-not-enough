@@ -1,0 +1,104 @@
+{
+  "workflow_version": "2.0.0",
+  "task_id": "DEMO-LOCAL-001",
+  "reviewer": "REPLACE WITH ACTUAL REVIEWER; disclose self-review",
+  "summary": "ILLUSTRATIVE: replace after inspecting actual source, capture and notes. These supplied judgments are not an executed review.",
+  "no_impact": {
+    "behavior": null,
+    "shared_contract": null,
+    "data_or_access": null,
+    "external_effect": null,
+    "dependency_or_migration": null,
+    "recovery": null
+  },
+  "scope_checks": [
+    "C-ORG",
+    "C-LEDGER"
+  ],
+  "principles": [
+    {
+      "id": "P01",
+      "status": "supported",
+      "reason": "Inspect: a repeat compared with first/distinct input answers the bounded question; an in-memory fixture is simpler than a real integration.",
+      "checks": [
+        "C-LEDGER"
+      ]
+    },
+    {
+      "id": "P02",
+      "status": "supported",
+      "reason": "Inspect: frozen EX-01/02 require actual repeat/control evidence and distinguish research completion from hypothesis truth.",
+      "checks": [
+        "C-LEDGER"
+      ]
+    },
+    {
+      "id": "P03",
+      "status": "supported",
+      "reason": "Inspect: selected fixture/capture/adapter and actual notes agree with the captured output and declared source identity. Inspect the actual organization ownership/packet/check source; structural declarations are not execution evidence.",
+      "checks": [
+        "C-LEDGER",
+        "C-ORG"
+      ]
+    },
+    {
+      "id": "P04",
+      "status": "supported",
+      "reason": "Inspect: valid first/distinct controls rule out reject-all behavior; scratch-only operation and retained captures bound recovery.",
+      "checks": [
+        "C-LEDGER"
+      ]
+    },
+    {
+      "id": "P05",
+      "status": "supported",
+      "reason": "Inspect: real capture and attributed notes retain observation, interpretation and remaining unknowns separately.",
+      "checks": [
+        "C-LEDGER"
+      ]
+    },
+    {
+      "id": "P06",
+      "status": "supported",
+      "reason": "Inspect: actual notes identify investigator, completed experiment, uncertainty and next safe action without a dashboard. Inspect the actual organization ownership/packet/check source; structural declarations are not execution evidence.",
+      "checks": [
+        "C-LEDGER",
+        "C-ORG"
+      ]
+    },
+    {
+      "id": "P07",
+      "status": "supported",
+      "reason": "Inspect: task is a synthetic local research demonstration, not target authorization, a runtime release or a payment effect. Inspect the actual organization ownership/packet/check source; structural declarations are not execution evidence.",
+      "checks": [
+        "C-LEDGER",
+        "C-ORG"
+      ]
+    },
+    {
+      "id": "P08",
+      "status": "supported",
+      "reason": "Inspect: the reader can understand what repeat refusal establishes and which identities/orderings/environments remain untested.",
+      "checks": [
+        "C-LEDGER"
+      ]
+    },
+    {
+      "id": "P09",
+      "status": "supported",
+      "reason": "Inspect: fixed stdlib scripts and one gate are proportionate; no model service, scanner fleet or new scheduler is required.",
+      "checks": [
+        "C-LEDGER"
+      ]
+    },
+    {
+      "id": "P10",
+      "status": "supported",
+      "reason": "Inspect: actual local authority and reviewer attribution are explicit; measured runs and unknown usage are distinguished, with no external permission claim. Inspect the actual organization ownership/packet/check source; structural declarations are not execution evidence.",
+      "checks": [
+        "C-LEDGER",
+        "C-ORG"
+      ]
+    }
+  ]
+}
