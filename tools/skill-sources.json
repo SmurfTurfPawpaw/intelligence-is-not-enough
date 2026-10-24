@@ -5,6 +5,7 @@
   "ARCHITECTURE.md",
   "CONTRIBUTING.md",
   "COVERAGE.md",
+  "DISCOVERY.md",
   "HOST-TOOLS.md",
   "LICENSE",
   "MODEL-PORTABILITY.md",
@@ -21,6 +22,7 @@
   "examples/capture.py",
   "examples/demo-review.json",
   "examples/demo-task.json",
+  "examples/discovery.json",
   "examples/explore.py",
   "examples/investigation-brief.md",
   "examples/ledger.py",
@@ -43,5 +45,6 @@
   "templates/INVESTIGATION.md",
   "templates/NOTES.md",
   "templates/WORK-PACKET.md",
+  "tools/discovery.py",
   "tools/orchestration.py"
 ]

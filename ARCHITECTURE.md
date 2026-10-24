@@ -12,6 +12,7 @@ The host can also use an open-weight model. [Model portability](MODEL-PORTABILIT
 | --- | --- | --- |
 | [Principles](base/PRINCIPLES-2.0.1.md) and [research rules](AGENTS.md) | Outcome, first principles, exploratory freedom, permission/evidence/recovery obligations | Guaranteed instruction compliance or target permission |
 | [Brief and notes](templates/INVESTIGATION.md) | Stable task boundary, evolving questions, observations, decisions and handoff | Authenticated execution or a continuously running researcher |
+| [Discovery and consumer paths](DISCOVERY.md) | Offline source lineage, explicit root-cause grouping, revision-bound graph projection and next questions | Automatic source collection, verified exploitability, deployment impact or a running intelligence service |
 | [Beyond Human Patience](AI-NATIVE.md) and [tool guide](TOOLS.md) | Ways to select/invent experiments and instruments | Installation, containment, availability or authority to run a tool |
 | Existing project runner and [example adapter](examples/accept.py) | Actual selected checks followed by the required gate | Automatic technical judgment or independent review |
 | Bundled [workflow runtime](runtime/principles-2.0.0/README.md) | Start/brief identity, review/receipt shape and selected current evidence bindings | Semantic truth, complete coverage, permission or sandboxing |

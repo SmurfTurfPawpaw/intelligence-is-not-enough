@@ -1,0 +1,169 @@
+{
+  "schema_version": "1.0.0",
+  "observations": [
+    {
+      "id": "advisory-1",
+      "source": "maintainer",
+      "sequence": 1,
+      "revision": "synthetic-1",
+      "url": "https://example.invalid/maintainer",
+      "kind": "primary",
+      "origin": null,
+      "result": "available",
+      "sha256": "9c5646b582f10531c791dd2372854409c96e8276f979c0aa4a505ec760e06100",
+      "published_at": "2030-01-01T11:00:00Z",
+      "updated_at": "2030-01-01T11:00:00Z",
+      "observed_at": "2030-01-01T12:00:00Z",
+      "fresh_for_seconds": 3600
+    },
+    {
+      "id": "runtime-1",
+      "source": "runtime-maintainer",
+      "sequence": 1,
+      "revision": "synthetic-1",
+      "url": "https://example.invalid/runtime-maintainer",
+      "kind": "primary",
+      "origin": null,
+      "result": "available",
+      "sha256": "99d40a4e592a4d69672ca5014058116897e28acd799e0b17c8eb05d62de3e062",
+      "published_at": "2030-01-01T11:00:00Z",
+      "updated_at": "2030-01-01T11:00:00Z",
+      "observed_at": "2030-01-01T12:00:00Z",
+      "fresh_for_seconds": 3600
+    },
+    {
+      "id": "config-1",
+      "source": "owned-config",
+      "sequence": 1,
+      "revision": "synthetic-1",
+      "url": "https://example.invalid/owned-config",
+      "kind": "primary",
+      "origin": null,
+      "result": "available",
+      "sha256": "cce6a64b43bf640e20a410dc5b866fa77ee8fee02c1930fbfa27ddb418afe4ed",
+      "published_at": "2030-01-01T11:00:00Z",
+      "updated_at": "2030-01-01T11:00:00Z",
+      "observed_at": "2030-01-01T12:00:00Z",
+      "fresh_for_seconds": 3600
+    },
+    {
+      "id": "repost-1",
+      "source": "social-repost",
+      "sequence": 1,
+      "revision": "synthetic-1",
+      "url": "https://example.invalid/social-repost",
+      "kind": "repost",
+      "origin": "advisory-1",
+      "result": "available",
+      "sha256": "25171b243a6253bae1a4bb0a0ffe1828d5a8bfe2ebb3b1b313c71ff79ef06454",
+      "published_at": "2030-01-01T11:00:00Z",
+      "updated_at": "2030-01-01T11:00:00Z",
+      "observed_at": "2030-01-01T12:00:00Z",
+      "fresh_for_seconds": 3600
+    }
+  ],
+  "components": [
+    {
+      "id": "decoder",
+      "revision": "rev-1"
+    },
+    {
+      "id": "runtime",
+      "revision": "rev-1"
+    },
+    {
+      "id": "web-shop",
+      "revision": "rev-1"
+    },
+    {
+      "id": "fetch-tool",
+      "revision": "rev-1"
+    },
+    {
+      "id": "batch-job",
+      "revision": "rev-1"
+    }
+  ],
+  "issues": [
+    {
+      "id": "decoder-demo",
+      "aliases": [
+        "DEMO-2030-0001",
+        "DecoderShell",
+        "HTTPShell"
+      ],
+      "root": "decoder",
+      "root_revision": "rev-1",
+      "root_cause": "Synthetic malformed-stream decoder flaw, not a real advisory",
+      "evidence": [
+        "advisory-1"
+      ]
+    }
+  ],
+  "links": [
+    {
+      "id": "bundle",
+      "issue": "decoder-demo",
+      "from": "decoder",
+      "to": "runtime",
+      "from_revision": "rev-1",
+      "to_revision": "rev-1",
+      "relation": "declared synthetic consumer",
+      "condition": "Synthetic fixture only; actual configuration evidence required in real work",
+      "presence": "affected",
+      "reachability": "reachable",
+      "direction": "local",
+      "evidence": [
+        "runtime-1"
+      ]
+    },
+    {
+      "id": "incoming",
+      "issue": "decoder-demo",
+      "from": "runtime",
+      "to": "web-shop",
+      "from_revision": "rev-1",
+      "to_revision": "rev-1",
+      "relation": "declared synthetic consumer",
+      "condition": "Synthetic fixture only; actual configuration evidence required in real work",
+      "presence": "affected",
+      "reachability": "reachable",
+      "direction": "inbound",
+      "evidence": [
+        "config-1"
+      ]
+    },
+    {
+      "id": "outgoing",
+      "issue": "decoder-demo",
+      "from": "runtime",
+      "to": "fetch-tool",
+      "from_revision": "rev-1",
+      "to_revision": "rev-1",
+      "relation": "declared synthetic consumer",
+      "condition": "Synthetic fixture only; actual configuration evidence required in real work",
+      "presence": "affected",
+      "reachability": "reachable",
+      "direction": "outbound",
+      "evidence": [
+        "config-1"
+      ]
+    },
+    {
+      "id": "unresolved",
+      "issue": "decoder-demo",
+      "from": "runtime",
+      "to": "batch-job",
+      "from_revision": "rev-1",
+      "to_revision": "rev-1",
+      "relation": "declared synthetic consumer",
+      "condition": "Synthetic fixture only; actual configuration evidence required in real work",
+      "presence": "affected",
+      "reachability": "unknown",
+      "direction": "unknown",
+      "evidence": [
+        "config-1"
+      ]
+    }
+  ]
+}

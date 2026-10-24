@@ -34,6 +34,8 @@ This profile is model-agnostic, including open-weight hosts. It supplies no cont
 
 ## RT04. Use the discovery loop
 
+For incoming disclosures and cross-component exposure, use [discovery and consumer tracing](DISCOVERY.md) to retain source lineage, explicit root-cause aliases and revision-bound consumer paths. Reuse the existing host and work records; its offline projection does not fetch sources, prove exploitability or dispatch experiments.
+
 1. State a characterization question or testable hypothesis. When behavior is unfamiliar, map it within a bounded question before proposing a vulnerability explanation. Define the invariant and a falsifiable claim when making a vulnerability claim. Rank the next experiment by information gained, plausibility, consequence and cost.
 2. Choose the cheapest discriminating experiment, including a simpler explanation and meaningful control. Establish relevant ordinary behavior and apparatus validity before interpreting an absent effect as a negative result. A broken/reject-all instrument yields inconclusive evidence, not a falsified security hypothesis. Controls need their actual authority. Prefer minimum-impact proof.
 3. Execute only through currently permitted capabilities. Record concise method, exact subject/environment/principal, time, observation, evidence reference and limits. Record actual usage when available; UNKNOWN is not zero.

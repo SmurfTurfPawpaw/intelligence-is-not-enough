@@ -10,7 +10,7 @@ This harness provides those working rules, reusable templates, tool guidance and
 
 The package is model-agnostic, including open-weight/local deployments. It contains no model content filter or provider-specific refusal policy. [Model portability](MODEL-PORTABILITY.md) explains the host contract and separates model policy, operator-configured execution and research-quality verification. No hosted AI subscription is required.
 
-**Release:** 2.3.0 · **Profile contract:** 2.0.0 · **Principles:** 2.0.1 · **Workflow:** 2.0.0 · **Runtime requirement:** Python 3.12 or newer. The workflow uses the Python standard library and performs no network request, model call, project test or global installation. Optional research tools have their own requirements. Codex users can use the [self-contained skill](https://github.com/SmurfTurfPawpaw/intelligence-is-not-enough/blob/v2.3.0/CODEX-SKILL.md) for adoption; ordinary project mode does not impose the research organization.
+**Release:** 2.4.0 · **Profile contract:** 2.0.0 · **Principles:** 2.0.1 · **Workflow:** 2.0.0 · **Runtime requirement:** Python 3.12 or newer. The workflow uses the Python standard library and performs no network request, model call, project test or global installation. Optional research tools have their own requirements. Codex users can use the [self-contained skill](https://github.com/SmurfTurfPawpaw/intelligence-is-not-enough/blob/v2.4.0/CODEX-SKILL.md) for adoption; ordinary project mode does not impose the research organization.
 
 For the distinction between a model, agent, workflow harness and execution runtime, read [the architecture](ARCHITECTURE.md). This package provides the workflow layer; an actual agent host supplies the model/tool loop and configured controls.
 
@@ -61,16 +61,16 @@ Keep engagement records and sensitive evidence in the project's approved private
 
 For a new research project, the extracted package can be the initial layout. Keep investigation records outside immutable guidance/runtime files and use the project's actual root in every command.
 
-For an existing project, retain the complete package under a directory such as `docs/red-team/releases/2.1.0/`. Merge the managed block from `AGENTS.md` into the project's root agent instructions, preserving local rules. Rewrite copied relative links to the actual retained locations, including:
+For an existing project, retain the complete package under a directory such as `docs/red-team/releases/2.4.0/`. Merge the managed block from `AGENTS.md` into the project's root agent instructions, preserving local rules. Rewrite copied relative links to the actual retained locations, including:
 
 ```text
-docs/red-team/releases/2.1.0/base/PRINCIPLES-2.0.1.md
-docs/red-team/releases/2.1.0/templates/INVESTIGATION.md
-docs/red-team/releases/2.1.0/README.md
-docs/red-team/releases/2.1.0/TOOLS.md
-docs/red-team/releases/2.1.0/AI-NATIVE.md
-docs/red-team/releases/2.1.0/MODEL-PORTABILITY.md
-docs/red-team/releases/2.1.0/ORCHESTRATION.md
+docs/red-team/releases/2.4.0/base/PRINCIPLES-2.0.1.md
+docs/red-team/releases/2.4.0/templates/INVESTIGATION.md
+docs/red-team/releases/2.4.0/README.md
+docs/red-team/releases/2.4.0/TOOLS.md
+docs/red-team/releases/2.4.0/AI-NATIVE.md
+docs/red-team/releases/2.4.0/MODEL-PORTABILITY.md
+docs/red-team/releases/2.4.0/ORCHESTRATION.md
 ```
 
 The agent performs the authorized routine adoption: reads the base, identifies the real root/current task, reuses existing records/checks and connects the required final gate to the actual acceptance command. It must preserve the gate's nonzero exit. A setup marker or an instruction file alone does not prove the gate ran.

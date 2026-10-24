@@ -65,6 +65,8 @@ Paths inside records are canonical, root-relative forward-slash paths. Directori
 
 ## 4. Investigate and adapt
 
+When a disclosure, research result or dependency change starts the investigation, use [discovery and consumer tracing](DISCOVERY.md): preserve original provenance and revisions, identify the root cause, derive qualified consumer paths and select a useful next discriminator. The offline `tools/discovery.py` report reuses the same notes/evidence/acceptance path; it fetches nothing and grants no testing authority. Run it again on relevant source, endpoint or freshness change. Preserve its nonzero attention result as unresolved work, not a silently replaced old report.
+
 Use the [discovery loop](AGENTS.md), [Beyond Human Patience](AI-NATIVE.md) and [tool guide](TOOLS.md): characterization question or hypothesis → cheapest discriminating experiment → valid apparatus/control → observation → revised explanation or next action. An open-ended characterization can produce the first hypothesis rather than pretending it was known beforehand. Keep experiment order, alternative explanations and concise decisions in [notes](templates/NOTES.md). Related probes can share one task; they do not each need a requirement document or reviewer.
 
 Establish a relevant working baseline before interpreting an absent effect. If the instrument cannot observe ordinary success, a rejected request or missing signal is inconclusive; it does not falsify the security hypothesis. If a control cannot be performed within actual authority, retain the limit.

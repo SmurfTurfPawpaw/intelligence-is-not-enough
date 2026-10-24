@@ -7,14 +7,14 @@ Full setup installs the skill, compatible local checker and **standing global G0
 Obtain and review the pinned release, then run one full-setup command with Python 3.12+:
 
 ```sh
-git clone --branch v2.3.0 --depth 1 https://github.com/SmurfTurfPawpaw/intelligence-is-not-enough.git
+git clone --branch v2.4.0 --depth 1 https://github.com/SmurfTurfPawpaw/intelligence-is-not-enough.git
 cd intelligence-is-not-enough
 python install.py --scope user
 ```
 
 Or give Codex this single installation request:
 
-> Install the full user-scope setup from https://github.com/SmurfTurfPawpaw/intelligence-is-not-enough/tree/v2.3.0. Read the installation guide and run `python install.py --scope user` from the reviewed checkout, then verify setup. Preserve my unrelated instructions and tools. Complete the global principles/runtime setup; do not stop at copying the skill folder.
+> Install the full user-scope setup from https://github.com/SmurfTurfPawpaw/intelligence-is-not-enough/tree/v2.4.0. Read the installation guide and run `python install.py --scope user` from the reviewed checkout, then verify setup. Preserve my unrelated instructions and tools. Complete the global principles/runtime setup; do not stop at copying the skill folder.
 
 Start a **new Codex run/session** after installation. The global rules are the always-present layer; the skill supplies deeper procedures when relevant. [Official AGENTS guidance](https://learn.chatgpt.com/docs/agent-configuration/agents-md) explains loading, precedence and size limits; [skill documentation](https://learn.chatgpt.com/docs/build-skills) explains optional explicit and implicit selection.
 
@@ -79,4 +79,4 @@ Retain real outputs privately, complete the attributed review/receipts and run t
 python tools/accept.py --root "PRIVATE_RECORD_ROOT" --task TASK_ID --organisation relative/actual-organization.json
 ```
 
-Preserve nonzero results; no unchanged broad rerun or recurring model call is required. Distribution2.3.0 adds full setup; profile2.0.0, principles2.0.1 and workflow2.0.0 retain their separate contracts. Published releases remain immutable. Checks and manifests establish selected local identities, not distributor signatures or universal correctness.
+Preserve nonzero results; no unchanged broad rerun or recurring model call is required. Distribution2.4.0 adds offline discovery and consumer tracing while retaining full automatic setup; profile2.0.0, principles2.0.1 and workflow2.0.0 retain their separate contracts. Published releases remain immutable. Checks and manifests establish selected local identities, not distributor signatures or universal correctness.

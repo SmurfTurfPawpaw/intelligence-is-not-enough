@@ -1,6 +1,6 @@
 {
   "name": "intelligence-is-not-enough",
-  "version": "2.3.0",
+  "version": "2.4.0",
   "generated_resources": "Exact copies of tools/skill-sources.json; edit source then rebuild",
   "files": [
     {
@@ -16,12 +16,12 @@
     {
       "path": "references/harness/ADOPTION.md",
       "bytes": 13423,
-      "sha256": "46aa2cb6358bb6075311a46894b07bb28425e732007fc8ea5263d7a494637e7d"
+      "sha256": "e7c14815e8449cbf6bb73925617686a6f5065ded3c6572d26fa975c8f5c143a1"
     },
     {
       "path": "references/harness/AGENTS.md",
-      "bytes": 15538,
-      "sha256": "c6e902d8a1426e01ee0ba7c52f045f2774979676079263e158eca082e708c833"
+      "bytes": 15871,
+      "sha256": "fdd67fe2c2b3df96740a49b62112dd7605a1c338f7d38e42f35f059245caafbe"
     },
     {
       "path": "references/harness/AI-NATIVE.md",
@@ -30,8 +30,8 @@
     },
     {
       "path": "references/harness/ARCHITECTURE.md",
-      "bytes": 4716,
-      "sha256": "d425540a2c75f08760120a047101c2be01638e1cccf47ab94d5bba7e2304da85"
+      "bytes": 4981,
+      "sha256": "5c134931eefe5e994ee0bf893192790e164bebd1b1c6e86a1cc59c2958bdeacc"
     },
     {
       "path": "references/harness/base/PRINCIPLES-2.0.1.md",
@@ -41,12 +41,17 @@
     {
       "path": "references/harness/CONTRIBUTING.md",
       "bytes": 2593,
-      "sha256": "35b3d0b75c4d60d8d05460d9f07f75c3a65213dba76992b33fba5266743624aa"
+      "sha256": "7fb276c6d355007d0397d0b5eb5ffd2d43f8e63f0925d2312501a65e69b5d66c"
     },
     {
       "path": "references/harness/COVERAGE.md",
       "bytes": 5830,
       "sha256": "c2040c541943b32130703410ffef1342aaf81ff7a6a77a9e0dd2a000ff652ded"
+    },
+    {
+      "path": "references/harness/DISCOVERY.md",
+      "bytes": 12665,
+      "sha256": "f46c4e8e31262480cea9e35a4e3d70e0141814aa33ba036d466415fa5f9c55cc"
     },
     {
       "path": "references/harness/examples/accept.py",
@@ -67,6 +72,11 @@
       "path": "references/harness/examples/demo-task.json",
       "bytes": 2008,
       "sha256": "92cd8bc68424eaf05f1e19e595c7732f8621b282e0db97b8c720cede25512045"
+    },
+    {
+      "path": "references/harness/examples/discovery.json",
+      "bytes": 4831,
+      "sha256": "b6947e3268bc364e84ae6328a7d1c566f38808d26d20f772d9032cfb83170ca4"
     },
     {
       "path": "references/harness/examples/explore.py",
@@ -140,13 +150,13 @@
     },
     {
       "path": "references/harness/PROFILE.json",
-      "bytes": 2998,
-      "sha256": "5047a9e380ab35ef3f058f55a25aa2968b6cbfe53c991d6b91f13e113af3ee23"
+      "bytes": 3119,
+      "sha256": "642cb022e866aa77b7adcb6c4fd921d766e59ae2efaad089ce5870f30cf5cfeb"
     },
     {
       "path": "references/harness/README.md",
-      "bytes": 9839,
-      "sha256": "9a3a1437246d87a951298c0246064c4d3cf7a5f8636923e6bb03c53ac522f73a"
+      "bytes": 10480,
+      "sha256": "48c3143aae5f507d45d028e04b2963daa5c61d87615f77942abb739b7376a1b8"
     },
     {
       "path": "references/harness/runtime/principles-2.0.0/principles.py",
@@ -219,6 +229,11 @@
       "sha256": "be158acd3861095db143b5dd3723bd1bc39b7a63eca19b504a4f4bcdd46d96d1"
     },
     {
+      "path": "references/harness/tools/discovery.py",
+      "bytes": 15422,
+      "sha256": "3a386e2f4645fdde7329437bec34cfa467c5c976c5b5fd0e95e8737e577847be"
+    },
+    {
       "path": "references/harness/tools/orchestration.py",
       "bytes": 12699,
       "sha256": "354672ed2735e3a7f3b7042805aa2af63afd2c3269e3e3eb8c3b0f68f6f7836c"
@@ -230,13 +245,13 @@
     },
     {
       "path": "references/harness/VERIFICATION.md",
-      "bytes": 7606,
-      "sha256": "0a5cb5bed46fe265559ff6fd7334cfba1a85cf12d56d5636fe6b24b6c27f76ca"
+      "bytes": 8279,
+      "sha256": "f4ad98f7623eb45e05e4eda830c184bbb64412bacce5290a57b7976df53bfdbd"
     },
     {
       "path": "references/harness/WORKFLOW.md",
-      "bytes": 14771,
-      "sha256": "f2bb3d312b68c339e18e409ecf8d1b1808c0c6b525b1c74869fc375804660b36"
+      "bytes": 15346,
+      "sha256": "c225652214f7084ec9d634590708e39908aba078f465946b0f5fcea51a925a5e"
     },
     {
       "path": "references/runtime-README.md",
@@ -260,8 +275,8 @@
     },
     {
       "path": "SKILL.md",
-      "bytes": 7243,
-      "sha256": "95e2a6db87ea47f240e48fe0f866641a591bb372160cbd4e90d7b2d804f1a4ac"
+      "bytes": 7627,
+      "sha256": "3bb755ebe74779c38f947a19ebe786a3cf8919c5f8b41a239d2aaa62a3eb36b8"
     }
   ]
 }

@@ -29,6 +29,8 @@ The [complete walkthrough](examples/WALKTHROUGH.md) demonstrates actual local ev
 
 ## Claims the required gate checks
 
+For discovery intake and consumer paths, run `python -B -m unittest discover -s tests -p test_discovery.py -v` and the [contained discovery example](DISCOVERY.md). The tool checks declared references, freshness and revision relationships and traverses a bounded graph. It does not evaluate a version range, authenticate a source, perform source-code reachability analysis, scan a service or prove exploitability. A complete projection describes only the declared graph; an attention report preserves unresolved work. Bind the actual private input, report, tool and relevant consumer evidence in the current task instead of accepting synthetic fixtures as real findings.
+
 The workflow checks the task/start/review/brief contract and selected local evidence bindings. It verifies the required ten review identities and references, checks current selected bytes against declared receipts and uses the newest relevant evidence. It checks the recorded workflow/core identities and frozen material brief. A small task also needs all required no-impact declarations.
 
 Define useful acceptance before collecting evidence. Check positive, negative and failure/recovery behavior appropriate to the research unit. Important examples include:

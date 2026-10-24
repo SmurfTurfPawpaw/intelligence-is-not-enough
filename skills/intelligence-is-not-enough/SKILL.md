@@ -9,7 +9,7 @@ Connect principles to the project's actual working and acceptance path. Use Pyth
 
 ## Full installation
 
-When asked to install this harness for automatic use, complete the explicit user-scope setup, not only a native skill copy: `python "SKILL_DIR/scripts/install.py" --scope user`. This verifies the bundle, retains compatible runtime bytes, preserves unrelated global instructions and installs a managed global principles block. A different existing skill needs deliberate `--upgrade`. Inspect reported overrides, conflicts or size limits rather than silently bypassing them. Use `check --scope user` to verify static setup; a new Codex run/session must load the standing guidance. See the [full setup and recovery guide](https://github.com/SmurfTurfPawpaw/intelligence-is-not-enough/blob/v2.3.0/CODEX-SKILL.md). No per-project skill invocation is needed once standing rules are configured. Model compliance and actual acceptance execution remain separate.
+When asked to install this harness for automatic use, complete the explicit user-scope setup, not only a native skill copy: `python "SKILL_DIR/scripts/install.py" --scope user`. This verifies the bundle, retains compatible runtime bytes, preserves unrelated global instructions and installs a managed global principles block. A different existing skill needs deliberate `--upgrade`. Inspect reported overrides, conflicts or size limits rather than silently bypassing them. Use `check --scope user` to verify static setup; a new Codex run/session must load the standing guidance. See the [full setup and recovery guide](https://github.com/SmurfTurfPawpaw/intelligence-is-not-enough/blob/v2.4.0/CODEX-SKILL.md). No per-project skill invocation is needed once standing rules are configured. Model compliance and actual acceptance execution remain separate.
 
 If complete standing principles already exist, read and assess them before using `--reuse-guidance-sha256` with their actual current digest. This avoids duplicate principles while keeping the reuse decision explicit and bound to reviewed bytes. A marker alone is insufficient.
 
@@ -57,6 +57,7 @@ Run the final gate before completion and actual acceptance/release boundaries. E
 
 ## Load depth when useful
 
+- New disclosures, changed dependencies or cross-component exposure: [discovery and consumer tracing](references/harness/DISCOVERY.md). Preserve source lineage and exact revisions, use the offline report to select a bounded next question, and keep presence/reachability/impact distinct. The report neither fetches sources nor starts agents; use the existing host and acceptance path.
 - Large/tedious search spaces: [Beyond Human Patience](references/harness/AI-NATIVE.md); keep repetitive execution deterministic, calibrate controls and bound aggregate cost.
 - Teams/handoffs: [orchestration](references/harness/ORCHESTRATION.md), [work packets](references/harness/templates/WORK-PACKET.md).
 - Capability choice and links: [tools](references/harness/TOOLS.md), [host adapters](references/harness/HOST-TOOLS.md), [model portability](references/harness/MODEL-PORTABILITY.md).
