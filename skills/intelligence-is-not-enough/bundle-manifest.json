@@ -1,6 +1,6 @@
 {
   "name": "intelligence-is-not-enough",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "generated_resources": "Exact copies of tools/skill-sources.json; edit source then rebuild",
   "files": [
     {
@@ -15,8 +15,8 @@
     },
     {
       "path": "references/harness/ADOPTION.md",
-      "bytes": 13117,
-      "sha256": "8b5a1fbe35e283e0fbf27e7f51d74e5f8fedae702f6023d1477d052af464c3d5"
+      "bytes": 13423,
+      "sha256": "46aa2cb6358bb6075311a46894b07bb28425e732007fc8ea5263d7a494637e7d"
     },
     {
       "path": "references/harness/AGENTS.md",
@@ -40,8 +40,8 @@
     },
     {
       "path": "references/harness/CONTRIBUTING.md",
-      "bytes": 2570,
-      "sha256": "dde2e4a8f4489790b857190b81c230cd043344b94cf60c101851866fcf859a31"
+      "bytes": 2593,
+      "sha256": "35b3d0b75c4d60d8d05460d9f07f75c3a65213dba76992b33fba5266743624aa"
     },
     {
       "path": "references/harness/COVERAGE.md",
@@ -140,13 +140,13 @@
     },
     {
       "path": "references/harness/PROFILE.json",
-      "bytes": 2746,
-      "sha256": "fd7ada87b4ae5f728864351bd06ba405033c4a946d9a0962433eadc308b7dd35"
+      "bytes": 2998,
+      "sha256": "5047a9e380ab35ef3f058f55a25aa2968b6cbfe53c991d6b91f13e113af3ee23"
     },
     {
       "path": "references/harness/README.md",
-      "bytes": 9714,
-      "sha256": "7711a66c0129b306d1fc7e3f7e3d99341e4b495f1ec65168ee08d063b9828749"
+      "bytes": 9839,
+      "sha256": "9a3a1437246d87a951298c0246064c4d3cf7a5f8636923e6bb03c53ac522f73a"
     },
     {
       "path": "references/harness/runtime/principles-2.0.0/principles.py",
@@ -239,9 +239,19 @@
       "sha256": "f2bb3d312b68c339e18e409ecf8d1b1808c0c6b525b1c74869fc375804660b36"
     },
     {
+      "path": "references/runtime-README.md",
+      "bytes": 1460,
+      "sha256": "3d730d187ed5a51280d3880c743508f2303e1df4ed973147cdae9d86f0d50a1b"
+    },
+    {
       "path": "scripts/accept.py",
       "bytes": 1842,
       "sha256": "5e3c846741694a5221cfbafd18d05f1977cb0775ba9bab729f4ed0b7b4ebf1f4"
+    },
+    {
+      "path": "scripts/install.py",
+      "bytes": 22121,
+      "sha256": "e26cd68aaaa6ad27da52e8bf52045a8a6b4107100a5dc1e2a7cc1e3e2a8dbf67"
     },
     {
       "path": "scripts/verify_bundle.py",
@@ -250,8 +260,8 @@
     },
     {
       "path": "SKILL.md",
-      "bytes": 6081,
-      "sha256": "5365e01e4711fb9d58fd31c9d82037b7c793f936a3c567784209a946aaafc8d6"
+      "bytes": 7243,
+      "sha256": "95e2a6db87ea47f240e48fe0f866641a591bb372160cbd4e90d7b2d804f1a4ac"
     }
   ]
 }

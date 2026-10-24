@@ -52,7 +52,7 @@
     "methods"
   ],
   "subtitle": "A Harness for Autonomous Discovery",
-  "release_version": "2.2.0",
+  "release_version": "2.3.0",
   "edition": "Red-team harness",
   "ai_native_title": "Beyond Human Patience",
   "repository": "https://github.com/SmurfTurfPawpaw/intelligence-is-not-enough",
@@ -65,6 +65,12 @@
       "research"
     ],
     "offline": true,
-    "runtime_version": "2.0.0"
+    "runtime_version": "2.0.0",
+    "automatic_setup": {
+      "entry": "install.py",
+      "scope": "explicit user scope",
+      "global_guidance": "managed AGENTS.md block; complete base principles or digest-bound reviewed reuse",
+      "skill_only_is_complete": false
+    }
   }
 }

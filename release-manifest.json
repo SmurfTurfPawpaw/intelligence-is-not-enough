@@ -1,6 +1,6 @@
 {
   "name": "Intelligence Is Not Enough",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "hash_algorithm": "SHA256",
   "files": [
     {
@@ -15,8 +15,8 @@
     },
     {
       "path": "ADOPTION.md",
-      "bytes": 13117,
-      "sha256": "8b5a1fbe35e283e0fbf27e7f51d74e5f8fedae702f6023d1477d052af464c3d5"
+      "bytes": 13423,
+      "sha256": "46aa2cb6358bb6075311a46894b07bb28425e732007fc8ea5263d7a494637e7d"
     },
     {
       "path": "AGENTS.md",
@@ -35,13 +35,13 @@
     },
     {
       "path": "CODEX-SKILL.md",
-      "bytes": 4497,
-      "sha256": "a55bc7e62e8b184dc2d2506a57f735bbbdb9b3a28580542d0de5efdeb886d5f6"
+      "bytes": 7508,
+      "sha256": "118a5152966c7d2756518ff1b4da3462ff29b2a1c860f11b5a6aa3bab4027b27"
     },
     {
       "path": "CONTRIBUTING.md",
-      "bytes": 2570,
-      "sha256": "dde2e4a8f4489790b857190b81c230cd043344b94cf60c101851866fcf859a31"
+      "bytes": 2593,
+      "sha256": "35b3d0b75c4d60d8d05460d9f07f75c3a65213dba76992b33fba5266743624aa"
     },
     {
       "path": "COVERAGE.md",
@@ -70,13 +70,13 @@
     },
     {
       "path": "PROFILE.json",
-      "bytes": 2746,
-      "sha256": "fd7ada87b4ae5f728864351bd06ba405033c4a946d9a0962433eadc308b7dd35"
+      "bytes": 2998,
+      "sha256": "5047a9e380ab35ef3f058f55a25aa2968b6cbfe53c991d6b91f13e113af3ee23"
     },
     {
       "path": "README.md",
-      "bytes": 9714,
-      "sha256": "7711a66c0129b306d1fc7e3f7e3d99341e4b495f1ec65168ee08d063b9828749"
+      "bytes": 9839,
+      "sha256": "9a3a1437246d87a951298c0246064c4d3cf7a5f8636923e6bb03c53ac522f73a"
     },
     {
       "path": "TOOLS.md",
@@ -169,6 +169,11 @@
       "sha256": "1383d990e598143af3321e0242b64e88d6f72a54a30b503012beeb7c0a0f62f3"
     },
     {
+      "path": "install.py",
+      "bytes": 302,
+      "sha256": "f5131cb071a48c8938bba0921fc5e21765f945db68de4fd7e263b3269e929609"
+    },
+    {
       "path": "runtime/principles-2.0.0/README.md",
       "bytes": 3575,
       "sha256": "b342bccd7e6a2fff52534159c691f94f3782cda7e88695c86df4e9fc9ba70552"
@@ -215,8 +220,8 @@
     },
     {
       "path": "skills/intelligence-is-not-enough/SKILL.md",
-      "bytes": 6081,
-      "sha256": "5365e01e4711fb9d58fd31c9d82037b7c793f936a3c567784209a946aaafc8d6"
+      "bytes": 7243,
+      "sha256": "95e2a6db87ea47f240e48fe0f866641a591bb372160cbd4e90d7b2d804f1a4ac"
     },
     {
       "path": "skills/intelligence-is-not-enough/agents/openai.yaml",
@@ -225,8 +230,8 @@
     },
     {
       "path": "skills/intelligence-is-not-enough/bundle-manifest.json",
-      "bytes": 9022,
-      "sha256": "f8e3c49fcba9bb336501444d0563fe3ab8f5731727a85cfe5e35368b2655068c"
+      "bytes": 9339,
+      "sha256": "7b45e22f564e3e9b4bf57d16959fba0bc84a9276d53c417bfe30847f9da66ce0"
     },
     {
       "path": "skills/intelligence-is-not-enough/references/base-workflow.md",
@@ -235,8 +240,8 @@
     },
     {
       "path": "skills/intelligence-is-not-enough/references/harness/ADOPTION.md",
-      "bytes": 13117,
-      "sha256": "8b5a1fbe35e283e0fbf27e7f51d74e5f8fedae702f6023d1477d052af464c3d5"
+      "bytes": 13423,
+      "sha256": "46aa2cb6358bb6075311a46894b07bb28425e732007fc8ea5263d7a494637e7d"
     },
     {
       "path": "skills/intelligence-is-not-enough/references/harness/AGENTS.md",
@@ -255,8 +260,8 @@
     },
     {
       "path": "skills/intelligence-is-not-enough/references/harness/CONTRIBUTING.md",
-      "bytes": 2570,
-      "sha256": "dde2e4a8f4489790b857190b81c230cd043344b94cf60c101851866fcf859a31"
+      "bytes": 2593,
+      "sha256": "35b3d0b75c4d60d8d05460d9f07f75c3a65213dba76992b33fba5266743624aa"
     },
     {
       "path": "skills/intelligence-is-not-enough/references/harness/COVERAGE.md",
@@ -285,13 +290,13 @@
     },
     {
       "path": "skills/intelligence-is-not-enough/references/harness/PROFILE.json",
-      "bytes": 2746,
-      "sha256": "fd7ada87b4ae5f728864351bd06ba405033c4a946d9a0962433eadc308b7dd35"
+      "bytes": 2998,
+      "sha256": "5047a9e380ab35ef3f058f55a25aa2968b6cbfe53c991d6b91f13e113af3ee23"
     },
     {
       "path": "skills/intelligence-is-not-enough/references/harness/README.md",
-      "bytes": 9714,
-      "sha256": "7711a66c0129b306d1fc7e3f7e3d99341e4b495f1ec65168ee08d063b9828749"
+      "bytes": 9839,
+      "sha256": "9a3a1437246d87a951298c0246064c4d3cf7a5f8636923e6bb03c53ac522f73a"
     },
     {
       "path": "skills/intelligence-is-not-enough/references/harness/TOOLS.md",
@@ -459,9 +464,19 @@
       "sha256": "354672ed2735e3a7f3b7042805aa2af63afd2c3269e3e3eb8c3b0f68f6f7836c"
     },
     {
+      "path": "skills/intelligence-is-not-enough/references/runtime-README.md",
+      "bytes": 1460,
+      "sha256": "3d730d187ed5a51280d3880c743508f2303e1df4ed973147cdae9d86f0d50a1b"
+    },
+    {
       "path": "skills/intelligence-is-not-enough/scripts/accept.py",
       "bytes": 1842,
       "sha256": "5e3c846741694a5221cfbafd18d05f1977cb0775ba9bab729f4ed0b7b4ebf1f4"
+    },
+    {
+      "path": "skills/intelligence-is-not-enough/scripts/install.py",
+      "bytes": 22121,
+      "sha256": "e26cd68aaaa6ad27da52e8bf52045a8a6b4107100a5dc1e2a7cc1e3e2a8dbf67"
     },
     {
       "path": "skills/intelligence-is-not-enough/scripts/verify_bundle.py",
@@ -492,6 +507,11 @@
       "path": "templates/WORK-PACKET.md",
       "bytes": 2073,
       "sha256": "be158acd3861095db143b5dd3723bd1bc39b7a63eca19b504a4f4bcdd46d96d1"
+    },
+    {
+      "path": "tests/test_install.py",
+      "bytes": 12819,
+      "sha256": "d2485da447ad1a8e77594c94077118a70e0c47869469d92b6c34639ab3e06151"
     },
     {
       "path": "tests/test_skill.py",

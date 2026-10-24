@@ -1,11 +1,17 @@
 ---
 name: intelligence-is-not-enough
-description: Adopt or apply the Intelligence Is Not Enough harness using first-principles project work, evidence-bound acceptance and lean orchestration. Use for requests to apply this harness or organize bounded exploratory security research. Do not select for unrelated coding, casual questions or work already governed by an equivalent workflow.
+description: Install, adopt or apply the Intelligence Is Not Enough harness using standing principles, evidence-bound acceptance and lean orchestration. Use for requests to install/apply this harness or organize bounded exploratory security research. Do not select for unrelated coding, casual questions or work already governed by an equivalent workflow.
 ---
 
 # Intelligence Is Not Enough
 
 Connect principles to the project's actual working and acceptance path. Use Python 3.12+ and bundled standard-library tools; no API, download, daemon or account is required. Resolve `SKILL_DIR` to this installed folder and `ROOT` to the actual project, never an incidental shell directory. Replace command placeholders with actual paths and the current task ID.
+
+## Full installation
+
+When asked to install this harness for automatic use, complete the explicit user-scope setup, not only a native skill copy: `python "SKILL_DIR/scripts/install.py" --scope user`. This verifies the bundle, retains compatible runtime bytes, preserves unrelated global instructions and installs a managed global principles block. A different existing skill needs deliberate `--upgrade`. Inspect reported overrides, conflicts or size limits rather than silently bypassing them. Use `check --scope user` to verify static setup; a new Codex run/session must load the standing guidance. See the [full setup and recovery guide](https://github.com/SmurfTurfPawpaw/intelligence-is-not-enough/blob/v2.3.0/CODEX-SKILL.md). No per-project skill invocation is needed once standing rules are configured. Model compliance and actual acceptance execution remain separate.
+
+If complete standing principles already exist, read and assess them before using `--reuse-guidance-sha256` with their actual current digest. This avoids duplicate principles while keeping the reuse decision explicit and bound to reviewed bytes. A marker alone is insufficient.
 
 ## Read current work and choose scope
 
