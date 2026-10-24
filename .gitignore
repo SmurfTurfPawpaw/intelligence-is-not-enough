@@ -1,0 +1,11 @@
+# Keep actual engagement data and generated task evidence private.
+.principles/
+internal/
+private/
+research/private/
+example-private/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example

@@ -1,0 +1,199 @@
+{
+  "schema_version": "1.0.0",
+  "profile_version": "2.0.0",
+  "project": "synthetic-parallel",
+  "revision": 2,
+  "integrator": "owner",
+  "state_writer": "owner",
+  "max_concurrent_workers": 2,
+  "references": {
+    "brief": "examples/investigation-brief.md",
+    "authority": "owned synthetic scratch copy only",
+    "evidence": "example-private/ledger-run.json",
+    "events": "example-private/notes.md"
+  },
+  "actors": [
+    {
+      "id": "owner",
+      "identity_reference": "synthetic owner/investigator; replace with actual contributor"
+    },
+    {
+      "id": "researcher",
+      "identity_reference": "synthetic investigator session"
+    },
+    {
+      "id": "reviewer",
+      "identity_reference": "synthetic distinct review session"
+    }
+  ],
+  "teams": [
+    {
+      "id": "coordination",
+      "owner": "owner",
+      "state": "ready",
+      "reason": "Synthetic tutorial responsibility; no running worker implied"
+    },
+    {
+      "id": "systems",
+      "owner": "researcher",
+      "state": "ready",
+      "reason": "Illustrative interrupted experiment; ownership retained"
+    },
+    {
+      "id": "discovery",
+      "owner": "researcher",
+      "state": "ready",
+      "reason": "Illustrative interrupted experiment; ownership retained"
+    },
+    {
+      "id": "engineering",
+      "owner": "researcher",
+      "state": "blocked",
+      "reason": "Illustrative interrupted experiment; ownership retained"
+    },
+    {
+      "id": "validation",
+      "owner": "reviewer",
+      "state": "ready",
+      "reason": "Distinct contributor; current exact submission required"
+    },
+    {
+      "id": "knowledge",
+      "owner": "owner",
+      "state": "ready",
+      "reason": "Synthetic tutorial responsibility; no running worker implied"
+    },
+    {
+      "id": "operations",
+      "owner": "owner",
+      "state": "dormant",
+      "reason": "Synthetic tutorial responsibility; no running worker implied"
+    },
+    {
+      "id": "methods",
+      "owner": "owner",
+      "state": "dormant",
+      "reason": "Synthetic tutorial responsibility; no running worker implied"
+    }
+  ],
+  "work": [
+    {
+      "id": "MAP",
+      "packet_revision": 1,
+      "team": "systems",
+      "requester": "owner",
+      "assignee": "researcher",
+      "integrator": "owner",
+      "contributors": [
+        "researcher"
+      ],
+      "stage": "integrated",
+      "objective": "Illustrate exact first/repeat/distinct synthetic ledger behavior",
+      "inputs": [
+        {
+          "reference": "examples/ledger.py",
+          "revision": "illustrative fixture identity; replace with observed hash"
+        }
+      ],
+      "authority_reference": "Owned disposable synthetic copy; no target or real payment",
+      "permitted_effects": "In-memory synthetic run and local private capture only",
+      "owned_outputs": [
+        "example-private/system-map.md"
+      ],
+      "output_claim": "released",
+      "dependencies": [],
+      "acceptance": "Actual fixture/source/control inspected; real workflow receipt remains separately required",
+      "budget": "One synthetic tutorial session; no model calls from scripts; actual host usage UNKNOWN",
+      "stop_recovery": "Preserve failed capture; no overwrite or automatic retry; no external effects",
+      "next_action": "Replace illustrative declarations with actual attributed work; no live conclusion",
+      "independence_required": true,
+      "handoff": {
+        "packet_revision": 1,
+        "submission_revision": "map-v1",
+        "artifacts": [
+          {
+            "reference": "example-private/system-map.md",
+            "revision": "map-v1"
+          }
+        ],
+        "observations": "ILLUSTRATIVE source relationship; initial bad-control attempt retained in history",
+        "limitations": "No live/concurrency/alternate-identity evidence; illustrative contributor/reviewer identities, genuine independence not authenticated",
+        "effects_recovery": "Illustrative in-memory only; no actual effect asserted"
+      },
+      "review": {
+        "actor": "reviewer",
+        "submission_revision": "map-v1",
+        "verdict": "pass",
+        "evidence_reference": "illustrative exact-map review, not actual executed validation"
+      }
+    },
+    {
+      "id": "EXPERIMENT",
+      "packet_revision": 2,
+      "team": "engineering",
+      "requester": "owner",
+      "assignee": "researcher",
+      "integrator": "owner",
+      "contributors": [
+        "researcher"
+      ],
+      "stage": "interrupted",
+      "objective": "Illustrate exact first/repeat/distinct synthetic ledger behavior",
+      "inputs": [
+        {
+          "reference": "examples/ledger.py",
+          "revision": "illustrative fixture identity; replace with observed hash"
+        }
+      ],
+      "authority_reference": "Owned disposable synthetic copy; no target or real payment",
+      "permitted_effects": "In-memory synthetic run and local private capture only",
+      "owned_outputs": [
+        "example-private/experiment"
+      ],
+      "output_claim": "held",
+      "dependencies": [
+        "MAP"
+      ],
+      "acceptance": "Actual fixture/source/control inspected; real workflow receipt remains separately required",
+      "budget": "One synthetic tutorial session; no model calls from scripts; actual host usage UNKNOWN",
+      "stop_recovery": "Preserve failed capture; no overwrite or automatic retry; no external effects",
+      "next_action": "Reconcile prior attempt/process/effects before resuming; do not rerun because a reply is missing",
+      "independence_required": false,
+      "handoff": null,
+      "review": null
+    },
+    {
+      "id": "CHALLENGE",
+      "packet_revision": 1,
+      "team": "validation",
+      "requester": "owner",
+      "assignee": "reviewer",
+      "integrator": "owner",
+      "contributors": [
+        "reviewer"
+      ],
+      "stage": "blocked",
+      "objective": "Illustrate exact first/repeat/distinct synthetic ledger behavior",
+      "inputs": [
+        {
+          "reference": "examples/ledger.py",
+          "revision": "illustrative fixture identity; replace with observed hash"
+        }
+      ],
+      "authority_reference": "Owned disposable synthetic copy; no target or real payment",
+      "permitted_effects": "In-memory synthetic run and local private capture only",
+      "owned_outputs": [],
+      "output_claim": "released",
+      "dependencies": [
+        "EXPERIMENT"
+      ],
+      "acceptance": "Actual fixture/source/control inspected; real workflow receipt remains separately required",
+      "budget": "One synthetic tutorial session; no model calls from scripts; actual host usage UNKNOWN",
+      "stop_recovery": "Preserve failed capture; no overwrite or automatic retry; no external effects",
+      "next_action": "Wait for reconciled exact experiment handoff; do not declare completed validation",
+      "independence_required": false,
+      "handoff": null,
+      "review": null
+    }
+  ]
+}

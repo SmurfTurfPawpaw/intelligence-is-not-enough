@@ -1,0 +1,59 @@
+{
+  "name": "Intelligence Is Not Enough",
+  "author": "Giovanni Callebaut",
+  "profile_version": "2.0.0",
+  "base_principles_version": "2.0.1",
+  "workflow_version": "2.0.0",
+  "core_schema_version": "1.0.0",
+  "entry_point": "AGENTS.md",
+  "base_principles": "base/PRINCIPLES-2.0.1.md",
+  "base_principles_sha256": "6c532d8e4564543c58709781fe1c02d1550e2b71a1337b4d7376da868b245dc7",
+  "runtime": {
+    "bundled": true,
+    "location": "runtime/principles-2.0.0",
+    "minimum_python": "3.12",
+    "dependencies": "Python standard library; optional structured-record validator sources/spec/example included",
+    "workflow_sha256": "75f8b147cf426bc6fbbf9fffe9a448517120649b65f65d22060cadf1bf28e0d4",
+    "core_sha256": "350a874d332c1fcb5f3348c804d216e84bd1f1370fcf2ecd242772d562985779"
+  },
+  "workflow_guide": "WORKFLOW.md",
+  "tool_guide": "TOOLS.md",
+  "agent_integrations": "HOST-TOOLS.md",
+  "verification_guide": "VERIFICATION.md",
+  "authority": "Guidance and local checker; no target permission, external-effect approval, sandbox or running service",
+  "tool_availability": "Establish actual tool availability/version/configuration separately from documentation and permission",
+  "maintenance_planning": {
+    "percent_range_of_defined_weekly_ai_allowance": [
+      0.2,
+      1
+    ],
+    "scope": "Changed profile routing/review, excluding security research",
+    "basis": "Hypothetical starting allocation; not measured",
+    "denominator": "Project-defined weekly AI allowance; record UNKNOWN if not established",
+    "review_trigger": "After three accepted investigations or a relevant policy/tool change"
+  },
+  "architecture_guide": "ARCHITECTURE.md",
+  "model_portability": "MODEL-PORTABILITY.md",
+  "ai_native_guide": "AI-NATIVE.md",
+  "complete_example": "examples/WALKTHROUGH.md",
+  "example_acceptance": "examples/accept.py",
+  "example_exploration": "examples/explore.py",
+  "orchestration_guide": "ORCHESTRATION.md",
+  "organization_checker": "tools/orchestration.py",
+  "organization_schema_version": "1.0.0",
+  "required_teams": [
+    "coordination",
+    "systems",
+    "discovery",
+    "engineering",
+    "validation",
+    "knowledge",
+    "operations",
+    "methods"
+  ],
+  "subtitle": "A Harness for Autonomous Discovery",
+  "release_version": "2.1.0",
+  "edition": "Red-team harness",
+  "ai_native_title": "Beyond Human Patience",
+  "repository": "https://github.com/SmurfTurfPawpaw/intelligence-is-not-enough"
+}

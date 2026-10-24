@@ -1,0 +1,2 @@
+# Preserve exact source bytes used by the pinned runtime and release hashes.
+* -text
