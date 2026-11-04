@@ -13,7 +13,7 @@ Use it with a hosted or open-weight model and an agent host that can read projec
 ## Try it locally
 
 ```sh
-git clone https://github.com/SmurfTurfPawpaw/intelligence-is-not-enough.git
+git clone -c core.longpaths=true https://github.com/SmurfTurfPawpaw/intelligence-is-not-enough.git
 cd intelligence-is-not-enough
 python --version
 python examples/ledger.py
@@ -22,6 +22,8 @@ python tools/orchestration.py check --record examples/organisation-compact.json
 ```
 
 Use your platform's Python 3.12+ command if it is named differently. No `pip install` is needed for these examples.
+
+The clone setting enables [Git for Windows long-path support](https://gitforwindows.org/git-cannot-create-a-file-or-directory-with-a-long-path.html) for this repository before checkout. Other Windows tools may still need a shorter parent directory.
 
 - **Ledger:** first identifier accepted, repeated identifier refused, distinct identifier accepted.
 - **Exploration:** ordinary code explores a bounded synthetic action space, detects an intentionally planted retry defect and identifies a reject-all apparatus as inconclusive. The overall calibration result is `pass`; that does not mean every implementation passed.

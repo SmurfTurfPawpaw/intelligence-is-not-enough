@@ -7,10 +7,12 @@ Full setup installs the skill, compatible local checker and **standing global G0
 Obtain and review the pinned release, then run one full-setup command with Python 3.12+:
 
 ```sh
-git clone --branch v2.4.0 --depth 1 https://github.com/SmurfTurfPawpaw/intelligence-is-not-enough.git
+git clone -c core.longpaths=true --branch v2.4.0 --depth 1 https://github.com/SmurfTurfPawpaw/intelligence-is-not-enough.git
 cd intelligence-is-not-enough
 python install.py --scope user
 ```
+
+The clone setting enables [Git for Windows long-path support](https://gitforwindows.org/git-cannot-create-a-file-or-directory-with-a-long-path.html) for this repository before checkout. Other Windows tools may still need a shorter parent directory.
 
 Or give Codex this single installation request:
 
