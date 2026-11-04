@@ -155,8 +155,8 @@
     },
     {
       "path": "references/harness/README.md",
-      "bytes": 10480,
-      "sha256": "48c3143aae5f507d45d028e04b2963daa5c61d87615f77942abb739b7376a1b8"
+      "bytes": 10755,
+      "sha256": "9bc52ca9dd0ca66ad9e8200155d3a5cb346bbae84f8df401ce9986b52a75147c"
     },
     {
       "path": "references/harness/runtime/principles-2.0.0/principles.py",
